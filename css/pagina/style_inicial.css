@@ -1,0 +1,44 @@
+body {
+    background: #3772FF;
+    color: #FFFFFF;
+}
+
+.conteiner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 1.4rem;
+}
+
+.secao1, .secao2__texto {
+    text-align: center;
+}
+
+.secao1__imagem--logo {
+    margin-bottom: 2rem;
+}
+
+.secao1__texto {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.secao2__texto {
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.forma2 {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
