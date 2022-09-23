@@ -4,17 +4,12 @@
     }
 
     .navegacao--conteiner {
-        width: 80%;
+        width: 70%;
     }
 
     .navegacao__imagem--logo {
         display: none;
     }
-
-    .navegacao__lista {
-        gap: 2.5rem;
-    }
-
 }
 
 @media screen and (min-width: 568px) {

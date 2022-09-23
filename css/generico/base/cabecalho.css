@@ -28,4 +28,13 @@
 .navegacao__lista {
     display: flex;
     align-items: center;
+    gap: 3rem;
+}
+
+.item__imagem--casa img {
+    width: 0.9rem;
+}
+
+.item__imagem--mensagem img {
+    width: 1.1rem;
 }
