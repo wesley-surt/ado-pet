@@ -1,0 +1,24 @@
+.conteiner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.2rem;
+}
+
+.secao1, .secao2__texto, .secao3 {
+    text-align: center;
+}
+
+.secao1__imagem--logo_azul {
+    margin-bottom: .4rem;
+}
+
+.secao2__texto {
+    font-weight: 400;
+}
+
+.forma2 {
+    position: absolute;
+    left: 0;
+}
