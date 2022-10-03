@@ -28,22 +28,14 @@
 }
 
 @media screen and (min-width: 768px) {
-    .secao2__texto, .botao {
-        width: 16rem;
-    }
-
     .forma2 {
         top: 21%;
-    }
-
-    .forma2 img {
-        width: 5rem;
     }
 }
 
 @media screen and (min-width: 968px) {
-    .secao2__texto {
-        width: 20rem;
+    #email {
+        width: 30rem;
     }
 }
 
