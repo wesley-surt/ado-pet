@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_cadastro-login.css">
     <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_cadastro-login.css">
-    <link rel="stylesheet" href="../css/pagina/style_login.css">
-    <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_login.css">
+    <link rel="stylesheet" href="../css/pagina/style_cadastro.css">
+    <link rel="stylesheet" href="../css/pagina/style_cadastro-login.css">
+    <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro.css">
+    <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro-login.css">
     <title>Document</title>
 </head>
 <body>
 
     <header class="cabecalho">
-
-        <div class="imagem--forma1"><img src="../imagens/Forma 1.png"></div>
+    <div class="imagem--forma1"><img src="../imagens/Forma 1.png"></div>
 
         <nav class="navegacao--conteiner">
             <div class="navegacao">
@@ -45,23 +46,34 @@
             </section>
 
             <section class="secao2">
-                <p class="secao2__texto">Já tem conta? Faça seu login:</p>
+                <p class="secao2__texto">Ainda não tem cadastro?</p>
+                <p class="secao2__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
             </section>
 
             <div class="forma2"></div>
+            <div class="imagem--patas"><img src="../imagens/Patas.png"></div>
 
             <section class="secao3">
                 
                 <form>
                     <div class="campo">
                         <label class="campo__label" for="email">Email</label>
-                        <input class="campo__input" type="email" placeholder="Insira seu email" id="email" name="email">
+                        <input class="campo__input" type="email" placeholder="Escolha seu melhor email" id="email" name="email">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="nome">Nome</label>
+                        <input class="campo__input" type="nome" placeholder="Digite seu nome completo" id="nome" name="nome">
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="senha">Senha</label>
                         <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" name="senha">
-                        <p><a class="esqueci_senha" href="#">Esqueci minha senha.</a></p>
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="confirma_senha">Confirma sua senha</label>
+                        <input class="campo__input" type="password" placeholder="Repita a senha criada acima" id="confirma_senha" name="confirma_senha">
                     </div>
                 </form>
                 
