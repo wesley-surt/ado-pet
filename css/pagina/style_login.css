@@ -20,6 +20,11 @@
     color: #3772FF;
 }
 
-.forma2 {
+.forma2, .imagem--patas {
     position: absolute;
+}
+
+.imagem--patas {
+    right: 0;
+    top: 0%;
 }

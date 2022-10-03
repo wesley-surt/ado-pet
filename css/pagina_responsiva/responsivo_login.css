@@ -25,6 +25,10 @@
         width: 5.3rem;
         height: 30.8rem;
     }
+
+    .imagem--patas img {
+        width: 10rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
