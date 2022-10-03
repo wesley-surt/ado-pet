@@ -2,8 +2,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
     justify-content: center;
-    gap: 2.2rem;
+    margin-bottom: 16rem;
 }
 
 .secao1, .secao2__texto, .secao3 {
@@ -11,14 +12,14 @@
 }
 
 .secao1__imagem--logo_azul {
-    margin-bottom: .4rem;
+    margin-bottom: .5rem;
 }
 
 .secao2__texto {
     font-weight: 400;
+    color: #3772FF;
 }
 
 .forma2 {
     position: absolute;
-    left: 0;
 }
