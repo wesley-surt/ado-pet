@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/generico/base/reset.css">
+    <link rel="stylesheet" href="../css/generico/base/body.css">
+    <link rel="stylesheet" href="../css/generico/base/cabecalho.css">
+    <link rel="stylesheet" href="../css/generico/base_responsiva/cabecalho.css">
+    <link rel="stylesheet" href="../css/generico/base/rodape.css">
+    <link rel="stylesheet" href="../css/generico/base_responsiva/rodape.css">
+    <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
+    <link rel="stylesheet" href="../css/generico/componentes/formulario/form_perfil-mensagem.css">
+    <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_perfil-mensagem.css.css">
+    <link rel="stylesheet" href="../css/pagina/style_mensagem.css">
+    <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_mensagem.css">
+    <link rel="stylesheet" href="../css/pagina/style_perfil-mensagem.css">
+    <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_perfil-mensagem.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="imagem--forma1"><img src="../imagens/Forma 1.png"></div>
+        <div class="imagem--usuario"><img src="../imagens/Usuário.png"></div>
+
+        <nav class="navegacao--conteiner">
+            <div class="navegacao">
+                <div  class="navegacao__imagem--logo"><img src="../imagens/Logo.png"></div>
+
+                <ul class="navegacao__lista">
+                    <li class="item"><a class="item__imagem--casa" href="#"><img src="../imagens/Casa.png"></a></li>
+                    <li class="item"><a class="item__imagem--mensagem" href="#"><img src="../imagens/Mensagens.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="conteiner">
+            <div>
+                <section class="secao1">
+                    <p class="secao1__texto">
+                        Envie uma mensagem para a pessoa ou instituição que está cuidando do animal.
+                    </p>
+                </section>
+                
+                <section class="secao2">
+                    <form class="formulario" action="GET">
+                        <div class="campo">
+                            <label class="campo__label" for="nome">Nome</label>
+                            <input class="campo__input" type="text" name="nome" id="nome">
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo__label" for="telefone">Telefone</label>
+                            <input class="campo__input" type="tel" name="telefone" id="telefone">
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo__label" for="nome_do_animal">Nome do animal</label>
+                            <input class="campo__input" type="text" name="nome_do_animal" id="nome_do_animal">
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo__label" for="mensagem">Mensagem</label>
+                            <textarea class="campo__textarea" cols="40" rows="11" type="textarea" name="mensagem" id="mensagem"></textarea>
+                        </div>
+                    </form>
+
+                    <input class="botao" type="submit" value="Salvar" name="botao" id="botao">
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>2022 - Desenvolvido pelo @wesley-surt.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.imagem--ellipse2, .imagem--usuario {
+    left: 77%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.conteiner {
+    margin-top: 2.5rem;
+}
+
+.conteiner>div {
+    margin: 0 auto;
+    width: 20.5rem;
+}
+
+.secao1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.secao1__texto {
+    color: #3772FF;
+    margin-bottom: 1.5rem;
+    width: 15rem;
+}
+
+.secao2 {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0rem;
+}
