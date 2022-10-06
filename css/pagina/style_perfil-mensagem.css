@@ -1,6 +1,4 @@
-.imagem--ellipse2, .imagem--usuario {
-    left: 77%;
-    margin-top: 10%;
+.imagem--ellipse2, .imagem--usuario, .forma2 {
     position: absolute;
 }
 
@@ -8,9 +6,8 @@
     margin-top: 2.5rem;
 }
 
-.conteiner>div {
+.conteiner > div {
     margin: 0 auto;
-    width: 20.5rem;
 }
 
 .secao1 {
@@ -21,7 +18,6 @@
 .secao1__texto {
     color: #3772FF;
     margin-bottom: 1.5rem;
-    width: 15rem;
 }
 
 .secao2 {

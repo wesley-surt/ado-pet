@@ -1,0 +1,55 @@
+@media screen and (min-width: 0) {
+    .imagem--ellipse2, .imagem--usuario {
+        right: 2.9rem;
+        margin-top: 2.5rem;
+    }
+
+    .conteiner > div {
+        width: 20.5rem;
+    }
+
+    .secao1__texto {
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .conteiner > div {
+        width: 25rem;
+    }
+
+    .secao1__texto {
+        width: 20.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .forma2 {
+        background: url(../../imagens/Forma\ 2.png) center / cover no-repeat;
+        top: 28%;
+        right: 0;
+        left:auto;
+        width: 5.3rem;
+        height: 30.8rem;
+    }
+
+    .conteiner > div {
+        width: 30rem;
+    }
+
+    .secao1__texto {
+        width: 25rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .imagem--ellipse2, .imagem--usuario {
+        right: 6rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imagem--ellipse2, .imagem--usuario {
+        right: 8rem;
+    }
+}
