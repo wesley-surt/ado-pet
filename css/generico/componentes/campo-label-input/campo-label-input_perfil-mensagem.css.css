@@ -3,7 +3,7 @@
     display: flex;
     font-weight: 600;
     flex-direction: column;
-    gap: .5rem;
+    gap: .8rem;
     width: 100%;
 }
 
@@ -14,5 +14,15 @@
 }
 
 .campo__input {
-    height: 2.5rem;
+    height: 3rem;
+}
+
+input[placeholder], textarea[placeholder] {
+    padding-left: .8rem;
+    font-size: .9rem;
+    color: #BCBCBC;
+}
+
+textarea[placeholder] {
+    padding-top: 1rem;
 }

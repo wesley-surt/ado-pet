@@ -4,6 +4,10 @@
         margin-top: 2.5rem;
     }
 
+    .conteiner {
+        margin-top: 2.5rem;
+    }
+
     .conteiner > div {
         width: 20.5rem;
     }
@@ -19,26 +23,31 @@
     }
 
     .secao1__texto {
-        width: 20.5rem;
+        width: 100%;
+    }
+
+    .conteiner {
+        margin-top: 4.5rem;
     }
 }
 
 @media screen and (min-width: 768px) {
     .forma2 {
         background: url(../../imagens/Forma\ 2.png) center / cover no-repeat;
-        top: 28%;
+        top: 18%;
         right: 0;
         left:auto;
-        width: 5.3rem;
-        height: 30.8rem;
+        width: 7rem;
+        height: 42rem;
+    }
+
+    .conteiner {
+        margin-bottom: 6rem;
+        margin-top: 5.5rem;
     }
 
     .conteiner > div {
-        width: 30rem;
-    }
-
-    .secao1__texto {
-        width: 25rem;
+        width: 35rem;
     }
 }
 
@@ -46,10 +55,22 @@
     .imagem--ellipse2, .imagem--usuario {
         right: 6rem;
     }
+
+    .forma2 {
+
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .imagem--ellipse2, .imagem--usuario {
         right: 8rem;
+    }
+
+    .conteiner {
+        margin-top: 3rem;
+    }
+
+    .forma2 {
+        top: 16%;
     }
 }
