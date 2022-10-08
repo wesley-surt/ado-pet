@@ -1,10 +1,13 @@
 .campo {
-    color: #3772FF;
     display: flex;
-    font-weight: 600;
     flex-direction: column;
     gap: .8rem;
     width: 100%;
+}
+
+.campo__label {
+    color: #3772FF;
+    font-weight: 600;
 }
 
 .campo > input, textarea {

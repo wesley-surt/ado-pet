@@ -10,6 +10,11 @@
     .navegacao__imagem--logo {
         display: none;
     }
+
+    .imagem--usuario, .imagem--ellipse {
+        right: 2.9rem;
+        top: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 568px) {
@@ -39,5 +44,17 @@
 
     .navegacao__imagem--logo img {
         width: 6rem;
+    }
+}
+
+@media screen and (min-width: 968px){
+    .imagem--usuario, .imagem--ellipse {
+        right: 6rem;
+    }
+}
+
+@media screen and (min-width: 1133px){
+    .imagem--usuario, .imagem--ellipse {
+        right: 8rem;
     }
 }
