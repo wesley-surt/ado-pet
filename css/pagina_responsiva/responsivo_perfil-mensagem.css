@@ -55,10 +55,6 @@
     .imagem--ellipse2, .imagem--usuario {
         right: 6rem;
     }
-
-    .forma2 {
-
-    }
 }
 
 @media screen and (min-width: 1300px) {

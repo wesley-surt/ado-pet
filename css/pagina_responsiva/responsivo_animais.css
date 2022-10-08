@@ -1,25 +1,83 @@
 @media screen and (min-width: 0){
+    .imagem--usuario {
+        right: 2.9rem;
+        top: 2.5rem;
+    }
+
     .conteiner {
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .secao1__texto {
-        width: 15rem;
+        width: 14rem;
+    }
+
+    .catalogo {
+        width: 23rem;
     }
 }
 
-@media screen and (min-width: 0){
-    
+@media screen and (min-width: 568px){
+    .conteiner {
+        margin-top: 3rem;
+    }
 }
 
-@media screen and (min-width: 0){
+@media screen and (min-width: 768px){
+    .conteiner {
+        margin-top: 7rem;
+    }
     
+    .secao1__texto {
+        width: 19rem;
+    }
+
+    .catalogo {
+        width: 46.8rem;
+    }
 }
 
-@media screen and (min-width: 0){
-    
+@media screen and (min-width: 968px){
+    .imagem--usuario {
+        right: 6rem;
+    }
 }
 
-@media screen and (min-width: 0){
-    
+@media screen and (min-width: 1133px){
+    .imagem--usuario {
+        right: 8rem;
+    }
+
+    .catalogo {
+        width: 70.6rem;
+    }
+
+    .secao1__texto {
+        width: 21rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .catalogo {
+        width: 70.6rem;
+    }
+
+    .conteiner {
+        margin-top: 2.8rem;
+        margin-bottom: 3.8rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1380px){
+    .forma2 {
+        background: url(../../imagens/Forma\ 2.png) center / cover no-repeat;
+        height: 36rem;
+        left: auto;
+        position: absolute;
+        top: 18%;
+        right: 0;
+        width: 6rem;
+    }
 }
