@@ -52,13 +52,22 @@
             <section class="secao3">
                 <form>
                     <div class="campo">
-                        <label class="campo__label" for="email">Email</label>
-                        <input class="campo__input" type="email" placeholder="Insira seu email" id="email" name="email">
+                        <label class="campo__label label_invalido" for="email">Email</label>
+
+                        <input class="campo__input input_invalido" type="email" placeholder="Insira seu email" 
+                        id="email" name="email" pattern="^([\w\da-zA-Z!@#$%&*+-._]+)@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$">
+
+                        <span class="mensagem_de_erro"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="senha">Senha</label>
-                        <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" name="senha">
+
+                        <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" 
+                        name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})">
+
+                        <span class="mensagem_de_erro"></span>
+
                         <p><a class="esqueci_senha" href="#">Esqueci minha senha.</a></p>
                     </div>
                 </form>
@@ -71,5 +80,7 @@
     <footer class="rodape">
         <p>2022 - Desenvolvido pelo @wesley-surt.</p>
     </footer>
+
+    <script type="module" src="../javascript/execucao/index_login.js"></script>
 </body>
 </html>
