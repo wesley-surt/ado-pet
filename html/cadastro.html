@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_cadastro-login.css">
     <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_cadastro-login.css">
+    <link rel="stylesheet" href="../css/generico/componentes/estilizacao_de_erros/style_erros.css">
     <link rel="stylesheet" href="../css/pagina/style_cadastro.css">
     <link rel="stylesheet" href="../css/pagina/style_cadastro-login.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro.css">
@@ -58,22 +59,30 @@
                 <form>
                     <div class="campo">
                         <label class="campo__label" for="email">Email</label>
-                        <input class="campo__input" type="email" placeholder="Escolha seu melhor email" id="email" name="email">
+                        <input class="campo__input" type="email" placeholder="Escolha seu melhor email"
+                         id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$">
+                         <span class="alerta" id="email"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="nome">Nome</label>
-                        <input class="campo__input" type="nome" placeholder="Digite seu nome completo" id="nome" name="nome">
+                        <input class="campo__input" type="nome" placeholder="Digite seu nome completo" id="nome" name="nome"
+                        pattern="^(\s*[a-zA-Z]{2,}\s*)+$">
+                         <span class="alerta" id="nome"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="senha">Senha</label>
-                        <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" name="senha">
+                        <input class="campo__input senha" type="password" placeholder="Insira sua senha"
+                         id="senha" name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})">
+                         <span class="alerta"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="confirma_senha">Confirma sua senha</label>
-                        <input class="campo__input" type="password" placeholder="Repita a senha criada acima" id="confirma_senha" name="confirma_senha">
+                        <input class="campo__input" type="password" placeholder="Repita a senha criada acima" 
+                        id="confirma_senha" name="confirmaSenha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})">
+                         <span class="alerta"></span>
                     </div>
                 </form>
                 
@@ -88,5 +97,6 @@
         <p>2022 - Desenvolvido pelo @wesley-surt.</p>
     </footer>
 
+    <script type="module" src="../javascript/execucao/index_cadastro.js"></script>
 </body>
 </html>
