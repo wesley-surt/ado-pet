@@ -2,14 +2,12 @@
 var inputs = document.querySelectorAll('.campo__input');
 
 inputs.forEach(input => {
-    var tipoDoInput = input.name;
-    var vazio = '';
-    var padraoIncorreto = false;
-    var campoLabel = input.parentNode.querySelector('.campo__label');
-    var campoInput = input.parentNode.querySelector('.campo__input');
-    var alerta = input.parentNode.querySelector('.alerta');
-
     input.addEventListener('blur', () => {
+        var vazio = '';
+        var campoLabel = input.parentNode.querySelector('.campo__label');
+        var campoInput = input.parentNode.querySelector('.campo__input');
+        var alerta = input.parentNode.querySelector('.alerta');
+
         if (input.value === vazio) {
             campoLabel.classList.add('alerta_label');
             campoInput.classList.add('alerta_input');
@@ -17,21 +15,28 @@ inputs.forEach(input => {
             alerta.textContent = 'Preencha o campo';
         }
         else{
+            var tipoDoInput = input.name;
+            var padraoIncorreto = "";
+
             campoLabel.classList.remove('alerta_label');
             campoInput.classList.remove('alerta_input');
             alerta.classList.remove('exibir_alerta');
             alerta.textContent = vazio;
 
+            // Exeção de validação do campo confirma senha, que deve ter seu valor igual a do campo senha
             switch (tipoDoInput) {
                 case "confirmaSenha":
-                    padraoIncorreto = validaConfirmaSenha(input); 
+                    var valorSenha = document.getElementById("senha");
+                    var valorConfirmaSenha = document.getElementById("confirmaSenha");
+
+                    padraoIncorreto = validaConfirmaSenha(valorSenha, valorConfirmaSenha);
                     break;
-            
+                
                 default:
                     padraoIncorreto = input.validity.patternMismatch;
                     break;
             }
-                
+
             if (padraoIncorreto) {
                 campoLabel.classList.add('alerta_label');
                 campoInput.classList.add('alerta_input');
@@ -41,16 +46,11 @@ inputs.forEach(input => {
                 alerta.textContent = mensagemPersonalizada;
             }
         }
-
-
     })
 })
 
-var validaConfirmaSenha = (input) => {
-    var valorSenha = document.querySelector(".senha").textContent;
-    var valorConfirmaSenha = input.textContent;
-
-    if (valorConfirmaSenha == valorSenha) {
+var validaConfirmaSenha = (valorSenha, valorConfirmaSenha) => {
+    if (valorSenha.value == valorConfirmaSenha.value) {
         return false;
     }
     else {
