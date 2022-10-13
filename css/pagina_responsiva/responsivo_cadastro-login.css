@@ -35,10 +35,14 @@
     .forma2 {
         top: 21%;
     }
+
+    .conteiner {
+        margin-top: 4rem;
+    }
 }
 
 @media screen and (min-width: 968px) {
-    #email, #nome {
+    #email, #nome, .alerta {
         width: 30rem;
     }
 }
@@ -46,5 +50,6 @@
 @media screen and (min-width: 1200px) {
     .conteiner {
         margin-top: -2rem;
+        margin-bottom: 14rem;
     }
 }

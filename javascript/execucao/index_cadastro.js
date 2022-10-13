@@ -1,5 +1,12 @@
 
+import { RetornaErroPersonalizado } from "../modulos/RetornaErroPersonalizado.js";
+import { validaConfirmaSenha } from "../modulos/validaConfirmaSenha.js";
+import { inputEmMaiusculo } from "../modulos/inputEmMaiusculo.js";
+
 var inputs = document.querySelectorAll('.campo__input');
+var inputNome = document.getElementById('nome');
+
+inputNome.oninput = inputEmMaiusculo;
 
 inputs.forEach(input => {
     input.addEventListener('blur', () => {
@@ -45,31 +52,14 @@ inputs.forEach(input => {
                 var mensagemPersonalizada = RetornaErroPersonalizado(input);
                 alerta.textContent = mensagemPersonalizada;
             }
+            else {
+                campoLabel.classList.remove('alerta_label');
+                campoInput.classList.remove('alerta_input');
+                alerta.classList.remove('exibir_alerta');
+
+                var mensagemPersonalizada = '';
+                alerta.textContent = mensagemPersonalizada;
+            }
         }
     })
 })
-
-var validaConfirmaSenha = (valorSenha, valorConfirmaSenha) => {
-    if (valorSenha.value == valorConfirmaSenha.value) {
-        return false;
-    }
-    else {
-        return true;
-    }
-}
-
-var RetornaErroPersonalizado = (input) => {
-    var tipoDoInput = input.name;
-
-    if (tipoDoInput in listaDeErrosPersonalizados) {
-        var mensagemPersonalizada = listaDeErrosPersonalizados[tipoDoInput];
-        return mensagemPersonalizada;
-    }
-}
-
-var listaDeErrosPersonalizados = {
-    email: 'O campo email está invalido.',
-    nome: 'O campo nome possui alguma irregularidade.',
-    senha: 'A senha deve conter no mínimo 6 digitos',
-    confirmaSenha: 'A senha informada não é idêntica a senha escolhida.'
-}
