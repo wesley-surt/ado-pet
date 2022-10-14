@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_login.css">
     <link rel="stylesheet" href="../css/pagina/style_cadastro-login.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro-login.css">
-    <title>Document</title>
+    <title class="pagina" aria-valuetext="login">login</title>
 </head>
 <body>
 
@@ -55,7 +55,8 @@
                         <label class="campo__label label_invalido" for="email">Email</label>
 
                         <input class="campo__input input_invalido" type="email" placeholder="Insira seu email" 
-                        id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$">
+                        id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$"
+                        required>
 
                         <span class="mensagem_de_erro"></span>
                     </div>
@@ -64,7 +65,7 @@
                         <label class="campo__label" for="senha">Senha</label>
 
                         <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" 
-                        name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})">
+                        name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})" required>
 
                         <span class="mensagem_de_erro"></span>
 
@@ -72,7 +73,7 @@
                     </div>
                 </form>
 
-                <input class="botao" type="submit" value="Entrar">
+                <button class="botao" type="submit" name="botao" id="botao">Entrar</button>
             </section>
         </article>
     </main>
@@ -82,5 +83,6 @@
     </footer>
 
     <script type="module" src="../javascript/execucao/index_login.js"></script>
+    <script type="module" src="../javascript/modulos/redireciona.js"></script>
 </body>
 </html>

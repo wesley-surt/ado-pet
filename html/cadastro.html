@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="../css/pagina/style_cadastro-login.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro-login.css">
-    <title>Document</title>
+    <title class="pagina" aria-valuetext="cadastro">cadastro</title>
 </head>
+
 <body>
 
     <header class="cabecalho">
@@ -60,33 +61,34 @@
                     <div class="campo">
                         <label class="campo__label" for="email">Email</label>
                         <input class="campo__input" type="email" placeholder="Escolha seu melhor email"
-                         id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$">
+                         id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$"
+                         required>
                          <span class="alerta"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="nome">Nome</label>
                         <input class="campo__input" type="nome" placeholder="Digite seu nome completo" id="nome" name="nome"
-                        pattern="^(\s*[a-zA-Z]{2,}\s*)+$">
+                        pattern="^(\s*[a-zA-Z]{2,}\s*)+$" required>
                          <span class="alerta"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="senha">Senha</label>
                         <input class="campo__input senha" type="password" placeholder="Insira sua senha"
-                         id="senha" name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})">
+                         id="senha" name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})" required>
                          <span class="alerta"></span>
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="confirma_senha">Confirma sua senha</label>
                         <input class="campo__input" type="password" placeholder="Repita a senha criada acima" 
-                        id="confirmaSenha" name="confirmaSenha">
+                        id="confirmaSenha" name="confirmaSenha" required>
                          <span class="alerta"></span>
                     </div>
                 </form>
                 
-                <input class="botao" type="submit" value="Entrar">
+                <button class="botao" type="submit" name="botao" id="botao">Salvar</button>
             </section>
 
         </article>
@@ -98,5 +100,6 @@
     </footer>
 
     <script type="module" src="../javascript/execucao/index_cadastro.js"></script>
+    <script type="module" src="../javascript/modulos/redireciona.js"></script>
 </body>
 </html>
