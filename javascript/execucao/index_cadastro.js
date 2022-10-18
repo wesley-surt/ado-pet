@@ -2,6 +2,8 @@
 import { RetornaErroPersonalizado } from "../modulos/RetornaErroPersonalizado.js";
 import { validaConfirmaSenha } from "../modulos/validaConfirmaSenha.js";
 import { inputEmMaiusculo } from "../modulos/inputEmMaiusculo.js";
+import { addClassesDeAlertas } from "../modulos/addClassesDeAlertas.js";
+import { removeClassesDeAlertas } from "../modulos/removeClassesDeAlertas.js";
 
 var inputs = document.querySelectorAll('.campo__input');
 var inputNome = document.getElementById('nome');
@@ -10,25 +12,20 @@ inputNome.oninput = inputEmMaiusculo;
 
 inputs.forEach(input => {
     input.addEventListener('blur', () => {
-        var vazio = '';
         var campoLabel = input.parentNode.querySelector('.campo__label');
         var campoInput = input.parentNode.querySelector('.campo__input');
         var alerta = input.parentNode.querySelector('.alerta');
+        var textoParaPeencher = 'Preencha o campo';
+        var vazio = '';
 
         if (input.value === vazio) {
-            campoLabel.classList.add('alerta_label');
-            campoInput.classList.add('alerta_input');
-            alerta.classList.add('exibir_alerta');
-            alerta.textContent = 'Preencha o campo';
+            addClassesDeAlertas(campoLabel, campoInput, alerta, textoParaPeencher);
         }
         else{
-            var tipoDoInput = input.name;
-            var padraoIncorreto = "";
+            removeClassesDeAlertas(campoLabel, campoInput, alerta, vazio);
 
-            campoLabel.classList.remove('alerta_label');
-            campoInput.classList.remove('alerta_input');
-            alerta.classList.remove('exibir_alerta');
-            alerta.textContent = vazio;
+            var tipoDoInput = input.name;
+            var padraoIncorreto = '';
 
             // Exeção de validação do campo confirma senha, que deve ter seu valor igual a do campo senha
             switch (tipoDoInput) {
@@ -45,20 +42,11 @@ inputs.forEach(input => {
             }
 
             if (padraoIncorreto) {
-                campoLabel.classList.add('alerta_label');
-                campoInput.classList.add('alerta_input');
-                alerta.classList.add('exibir_alerta');
-
                 var mensagemPersonalizada = RetornaErroPersonalizado(input);
-                alerta.textContent = mensagemPersonalizada;
+                addClassesDeAlertas(campoLabel, campoInput, alerta, mensagemPersonalizada);
             }
             else {
-                campoLabel.classList.remove('alerta_label');
-                campoInput.classList.remove('alerta_input');
-                alerta.classList.remove('exibir_alerta');
-
-                var mensagemPersonalizada = '';
-                alerta.textContent = mensagemPersonalizada;
+                removeClassesDeAlertas(campoLabel, campoInput, alerta, vazio);
             }
         }
     })

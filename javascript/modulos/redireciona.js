@@ -1,7 +1,4 @@
-
-
-
-
+import { confereValidacaoFormulario } from "../modulos/confereValidacaoFormulario.js";
 var botoes = document.querySelectorAll('.botao');
 
 botoes.forEach(botao => {
@@ -9,10 +6,20 @@ botoes.forEach(botao => {
         var nomeDaPagina = document.querySelector('.pagina').ariaValueText;
     
         if (nomeDaPagina === 'cadastro') {
-            window.location = 'perfil.html';
+            var inputs = document.querySelectorAll('.campo__input');
+            var formularioValido = confereValidacaoFormulario(inputs);
+
+            if (formularioValido) {
+                window.location = 'perfil.html';
+            }
         }
         else if (nomeDaPagina === 'login') {
-            window.location = 'perfil.html';
+            var inputs = document.querySelectorAll('.campo__input');
+            var formularioValido = confereValidacaoFormulario(inputs);
+
+            if (formularioValido) {
+                window.location = 'perfil.html';
+            }
         }
         else if (nomeDaPagina === 'inicio') {
             if (evento.target.name === 'login') {

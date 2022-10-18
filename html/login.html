@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_cadastro-login.css">
     <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_cadastro-login.css">
+    <link rel="stylesheet" href="../css/generico/componentes/estilizacao_de_erros/style_erros.css">
     <link rel="stylesheet" href="../css/pagina/style_login.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_login.css">
     <link rel="stylesheet" href="../css/pagina/style_cadastro-login.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_cadastro-login.css">
     <title class="pagina" aria-valuetext="login">login</title>
 </head>
+
 <body>
 
     <header class="cabecalho">
@@ -52,13 +54,13 @@
             <section class="secao3">
                 <form>
                     <div class="campo">
-                        <label class="campo__label label_invalido" for="email">Email</label>
+                        <label class="campo__label" for="email">Email</label>
 
-                        <input class="campo__input input_invalido" type="email" placeholder="Insira seu email" 
+                        <input class="campo__input" type="email" placeholder="Insira seu email" 
                         id="email" name="email" pattern="^[a-zA-Z\w\d!@#$%&*+-._]+@([a-zA-Z\d]+(.[a-zA-Z\d]+)+)$"
                         required>
 
-                        <span class="mensagem_de_erro"></span>
+                        <span class="alerta"></span>
                     </div>
 
                     <div class="campo">
@@ -67,7 +69,7 @@
                         <input class="campo__input" type="password" placeholder="Insira sua senha" id="senha" 
                         name="senha" pattern="^([\w\da-zA-Z!@#$%&*+-._]{6,})" required>
 
-                        <span class="mensagem_de_erro"></span>
+                        <span class="alerta"></span>
 
                         <p><a class="esqueci_senha" href="#">Esqueci minha senha.</a></p>
                     </div>
