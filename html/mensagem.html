@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_perfil-mensagem.css">
     <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_perfil-mensagem.css.css">
+    <link rel="stylesheet" href="../css/generico/componentes/estilizacao_de_erros/style_erros.css">
     <link rel="stylesheet" href="../css/pagina/style_mensagem.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_mensagem.css">
     <link rel="stylesheet" href="../css/pagina/style_perfil-mensagem.css">
@@ -53,23 +54,29 @@
                 </section>
                 
                 <section class="secao2">
-                    <form class="formulario" action="GET">
+                    <form class="formulario">
                         <div class="campo">
                             <label class="campo__label" for="nome">Nome</label>
                             <input class="campo__input" type="text" name="nome" id="nome" 
                             required placeholder="Insira seu nome completo">
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="telefone">Telefone</label>
                             <input class="campo__input" type="tel" name="telefone" id="telefone" 
                             required placeholder="Insira seu telefone e/ou whatsapp">
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="nome_do_animal">Nome do animal</label>
                             <input class="campo__input" type="text" name="nome_do_animal" id="nome_do_animal" 
                             required placeholder="Por qual animal você se interessou">
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
@@ -79,7 +86,7 @@
                         </div>
                     </form>
 
-                <button class="botao" type="submit" name="botao" id="botao">Enviar</button>
+                    <button class="botao" type="submit" name="botao" id="botao">Enviar</button>
                 </section>
             </div>
         </article>
@@ -88,5 +95,7 @@
     <footer class="rodape">
         <p>2022 - Desenvolvido pelo @wesley-surt.</p>
     </footer>
+
+    <script type="module" src="../javascript/execucao/index_mensagem.js"></script>
 </body>
 </html>

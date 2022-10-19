@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_perfil-mensagem.css">
     <link rel="stylesheet" href="../css/generico/componentes/campo-label-input/campo-label-input_perfil-mensagem.css.css">
+    <link rel="stylesheet" href="../css/generico/componentes/estilizacao_de_erros/style_erros.css">
     <link rel="stylesheet" href="../css/pagina/style_perfil.css">
     <link rel="stylesheet" href="../css/pagina_responsiva/responsivo_perfil.css">
     <link rel="stylesheet" href="../css/pagina/style_perfil-mensagem.css">
@@ -67,19 +68,25 @@
                         <div class="campo">
                             <label class="campo__label" for="nome">Nome</label>
                             <input class="campo__input" type="text" name="nome" id="nome"
-                            required>
+                            pattern="^(\s*[a-zA-Z]{2,}\s*)+$" required>
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="telefone">Telefone</label>
                             <input class="campo__input" type="tel" name="telefone" id="telefone"
-                            required>
+                            pattern="^(\d{2})\s*(\d{5}[-_\s]*\d{4})$" required>
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="cidade">Cidade</label>
                             <input class="campo__input" type="text" name="cidade" id="cidade"
-                            required>
+                            pattern="^(\s*[a-zA-Z]{2,}\s*)+$" required>
+
+                            <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
@@ -98,5 +105,7 @@
     <footer class="rodape">
         <p>2022 - Desenvolvido pelo @wesley-surt.</p>
     </footer>
+
+    <script type="module" src="../javascript/execucao/index_perfil.js"></script>
 </body>
 </html>
