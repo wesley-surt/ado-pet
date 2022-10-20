@@ -8,7 +8,6 @@ botoes.forEach(botao => {
         if (nomeDaPagina === 'cadastro') {
             var inputs = document.querySelectorAll('.campo__input');
             var formularioValido = confereValidacaoFormulario(inputs);
-
             if (formularioValido) {
                 window.location = 'perfil.html';
             }
@@ -27,6 +26,24 @@ botoes.forEach(botao => {
             }
             else if (evento.target.name === 'cadastro') {
                 window.location = 'cadastro.html';
+            }
+        }
+        else if (nomeDaPagina === 'perfil') {
+            var inputs = document.querySelectorAll('.campo__input');
+            var formularioValido = confereValidacaoFormulario(inputs);
+
+            if (formularioValido) {
+                alert('Perfil salvo com sucesso!');
+                window.location.reload();
+            }
+        }
+        else if (nomeDaPagina === 'mensagem') {
+            var inputs = document.querySelectorAll('.campo__input');
+            var formularioValido = confereValidacaoFormulario(inputs);
+
+            if (formularioValido) {
+                alert('Mensagem evniada com sucesso!');
+                window.location.reload();
             }
         }
     }

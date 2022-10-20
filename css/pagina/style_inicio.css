@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.4rem;
 }
 
 .secao1, .secao2__texto {
@@ -32,14 +31,13 @@ body {
 .ilustracao {
     margin-left: -2rem;
     margin-bottom: -0.2rem;
+    align-self: flex-end;
 }
 
 .forma2 {
     position: absolute;
     right: 0;
 }
-
-
 
 .botoes {
     display: flex;

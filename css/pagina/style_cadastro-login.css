@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .secao1, .secao2__texto, .secao3 {

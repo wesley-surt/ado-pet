@@ -48,25 +48,20 @@
 }
 
 @media screen and (min-width: 1300px){
-    .catalogo {
-        width: 70.6rem;
-    }
-
     .conteiner {
         margin-top: 2.8rem;
         margin-bottom: 3.8rem;
         gap: 2rem;
-    }
+        position: relative;
 }
 
-@media screen and (min-width: 1380px){
     .forma2 {
         background: url(../../imagens/Forma\ 2.png) center / cover no-repeat;
-        height: 36rem;
+        height: 33rem;
         left: auto;
         position: absolute;
-        top: 18%;
+        top: 14%;
         right: 0;
-        width: 6rem;
+        width: 5.5rem;
     }
 }

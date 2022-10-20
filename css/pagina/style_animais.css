@@ -1,3 +1,5 @@
+
+
 .conteiner {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,9 @@
     color: #3772FF;
     margin: .9rem 0;
     text-align: end;
+}
+.filtrar {
+    position: relative;
 }
 
 .secao1 {

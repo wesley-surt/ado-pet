@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/generico/base/cabecalho.css">
     <link rel="stylesheet" href="../css/generico/base_responsiva/cabecalho.css">
     <link rel="stylesheet" href="../css/generico/base/rodape.css">
+    <link rel="stylesheet" href="../css/generico/base/conteiner.css">
     <link rel="stylesheet" href="../css/generico/base_responsiva/rodape.css">
     <link rel="stylesheet" href="../css/generico/componentes/botao/botao.css">
     <link rel="stylesheet" href="../css/generico/componentes/formulario/form_perfil-mensagem.css">
@@ -58,7 +59,7 @@
                         <div class="campo">
                             <label class="campo__label" for="nome">Nome</label>
                             <input class="campo__input" type="text" name="nome" id="nome" 
-                            required placeholder="Insira seu nome completo">
+                            pattern="^(\s*[a-zA-Z]{2,}\s*)+$" required placeholder="Insira seu nome completo">
 
                             <span class="alerta"></span>
                         </div>
@@ -66,23 +67,25 @@
                         <div class="campo">
                             <label class="campo__label" for="telefone">Telefone</label>
                             <input class="campo__input" type="tel" name="telefone" id="telefone" 
-                            required placeholder="Insira seu telefone e/ou whatsapp">
+                            pattern="^(\d{2})\s*(\d{5}[-_\s]*\d{4})$" required placeholder="Insira seu telefone e/ou whatsapp">
 
                             <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="nome_do_animal">Nome do animal</label>
-                            <input class="campo__input" type="text" name="nome_do_animal" id="nome_do_animal" 
-                            required placeholder="Por qual animal você se interessou">
+                            <input class="campo__input" type="text" name="nomeDoAnimal" id="nome_do_animal" 
+                            pattern="^(\s*[a-zA-Z]{2,}\s*)+$" required placeholder="Por qual animal você se interessou">
 
                             <span class="alerta"></span>
                         </div>
 
                         <div class="campo">
                             <label class="campo__label" for="mensagem">Mensagem</label>
-                            <textarea class="campo__textarea" cols="40" rows="11" type="textarea" required  
-                            name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                            <textarea class="campo__textarea" cols="40" rows="11" type="textarea" name="mensagem" id="mensagem"
+                            pattern="^(\s*\.*[a-zA-Z\w\d]{2,}\.*\s*)+$" required placeholder="Escreva sua mensagem"></textarea>
+
+                            <span class="alerta"></span>
                         </div>
                     </form>
 
@@ -96,6 +99,7 @@
         <p>2022 - Desenvolvido pelo @wesley-surt.</p>
     </footer>
 
-    <script type="module" src="../javascript/execucao/index_mensagem.js"></script>
+    <script type="module" src="../javascript/execucao/index_perfil-mensagem.js"></script>
+    <script type="module" src="../javascript/execucao/index_redireciona.js"></script>
 </body>
 </html>
