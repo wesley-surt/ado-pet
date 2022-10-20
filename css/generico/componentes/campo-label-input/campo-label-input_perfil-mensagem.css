@@ -23,7 +23,6 @@
 input[placeholder], textarea[placeholder] {
     padding-left: .8rem;
     font-size: .9rem;
-    color: #BCBCBC;
 }
 
 textarea[placeholder] {
