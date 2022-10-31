@@ -30,6 +30,9 @@ botoes.forEach(botao => {
             if (formularioValido) {
                 window.location = 'perfil.html';
             }
+            else{
+                janela.classList.add('abre_janela');
+            }
         }
         else if (nomeDaPagina === 'inicio') {
             if (evento.target.name === 'login') {
@@ -47,6 +50,9 @@ botoes.forEach(botao => {
                 alert('Perfil salvo com sucesso!');
                 window.location.reload();
             }
+            else{
+                janela.classList.add('abre_janela');
+            }
         }
         else if (nomeDaPagina === 'mensagem') {
             var inputs = document.querySelectorAll('.campo__input');
@@ -55,6 +61,9 @@ botoes.forEach(botao => {
             if (formularioValido) {
                 alert('Mensagem evniada com sucesso!');
                 window.location.reload();
+            }
+            else{
+                janela.classList.add('abre_janela');
             }
         }
     }
