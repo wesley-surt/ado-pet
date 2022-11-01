@@ -26,7 +26,6 @@ export var confereValidacaoFormulario = (inputs) => {
                 return tudoCerto = false;
             }
         }
-        console.log(input.name);
     }
     return tudoCerto;
 }

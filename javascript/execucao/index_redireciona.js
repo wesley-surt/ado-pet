@@ -8,8 +8,7 @@ botaoDeFecharJanela.onclick = function () {
     janela.classList.remove('abre_janela');
 };
 
-botoes.forEach(botao => {
-    botao.onclick = (evento) => {
+    botao.onclick = () => {
         var nomeDaPagina = document.querySelector('.pagina').ariaValueText;
     
         if (nomeDaPagina === 'cadastro') {
@@ -32,14 +31,6 @@ botoes.forEach(botao => {
             }
             else{
                 janela.classList.add('abre_janela');
-            }
-        }
-        else if (nomeDaPagina === 'inicio') {
-            if (evento.target.name === 'login') {
-                window.location = 'login.html';
-            }
-            else if (evento.target.name === 'cadastro') {
-                window.location = 'cadastro.html';
             }
         }
         else if (nomeDaPagina === 'perfil') {
@@ -67,4 +58,3 @@ botoes.forEach(botao => {
             }
         }
     }
-});

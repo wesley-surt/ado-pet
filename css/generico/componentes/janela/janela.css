@@ -1,9 +1,10 @@
 .janela {
     align-items: baseline;
+    background-color: rgba(0,0,0,0.5);
     display: none;
     height: 100%;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -19,6 +20,7 @@
     row-gap: 2rem;
     text-align: center;
     top: 35%;
+    transform: translateY(-80%);
 }
 
 .pop-up__texto {
