@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .secao1, .secao2__texto {
@@ -28,19 +29,27 @@ body {
     line-height: 1.3rem;
 }
 
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.secao4 {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 .ilustracao {
     margin-left: -2rem;
     margin-bottom: -0.2rem;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .forma2 {
     position: absolute;
     right: 0;
-}
-
-.botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
 }
